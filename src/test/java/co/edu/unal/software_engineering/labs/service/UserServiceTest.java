@@ -90,7 +90,7 @@ public class UserServiceTest{
         assertFalse( userService.isRightUser( user ) );
 
         user.setNames( "test" );
-        assertFalse( userService.isRightUser( user ) );
+        assertTrue( userService.isRightUser( user ) );
 
         user.setNames( "   " );
         user.setSurnames( "Test" );
